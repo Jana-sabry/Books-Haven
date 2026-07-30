@@ -8,3 +8,4 @@ menuToggle.addEventListener('click' , () => {
     const isHidden = mobileMenu.classList.contains('hidden');
     menuToggle.setAttribute('aria-expanded', !isHidden);
 })
+
