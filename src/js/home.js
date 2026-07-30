@@ -6,7 +6,7 @@ fetch("data/db.json")
         const bestBooks = data.products.filter(product => product.best_seller === true);
         bestBooks.forEach((product, index) => {
             const card = document.createElement("div");
-            card.className = "product-card cursor-pointer bg-[#2c231b] rounded-xl p-2 sm:p-3 shadow-md shadow-black/30 border border-[#4a3c30] opacity-0 translate-y-4 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg";
+            card.className = "product-card cursor-pointer bg-[#2c231b] rounded-xl p-2 sm:p-4 shadow-md shadow-black/30 border border-[#4a3c30] opacity-0 translate-y-4 transition-all duration-500 hover:-translate-y-1 hover:shadow-lg";
 
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}" class="w-full h-50 sm:h-60 object-cover rounded-lg mb-2">
